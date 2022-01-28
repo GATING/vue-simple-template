@@ -1,0 +1,82 @@
+@import "./_flex";
+@import "./_size";
+@import "./_color";
+
+body {
+  font-family: $font-family-regular;
+  font-size: 14px;
+  line-height: 1.5;
+  color: $main-color;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+.text-center {
+  text-align: center;
+}
+
+.text-input-left {
+  &.el-input-number input {
+    @extend .text-left;
+  }
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.text-decoration {
+  text-decoration: none;
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.align-top {
+  vertical-align: top;
+}
+
+.dialog-table {
+  .el-form-item--small.el-form-item {
+    margin-bottom: 0;
+  }
+}
+
+.ellipsis {
+  @include ellipsis();
+}
+
+.pre-wrap {
+  white-space: pre-wrap;
+}
+
+.break-all {
+  word-break: break-all;
+}
+
+.global-loading {
+  z-index: 9999;
+}
+
+.el-dialog {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: 0 !important;
+  transform: translate(-50%, -50%);
+  animation: none !important;
+}
